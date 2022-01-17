@@ -1,13 +1,8 @@
-package de.uka.ipd.sdq.dsexplore.analysis.confidentiality;
+package org.palladiosimulator.pcm.dataflow.confidentiality.qml;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-/**
- * Copied from {@link org.palladiosimulator.dataflow.confidentiality.pcm.workflow.Activator}
- * for StandaloneUtil init
- *
- */
 public class Activator implements BundleActivator {
 
 	private static BundleContext context;

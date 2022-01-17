@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QMLContractType:Dimension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:QMLContractType="http:///QMLContractType.ecore" id="_lzV00Fv5EeyWNI3A5PdLkQ" entityName="Confidentiality">
+  <type xsi:type="QMLContractType:DimensionTypeEnum" id="_pTFSIVv5EeyWNI3A5PdLkQ">
+    <elements id="_qhBE4Vv5EeyWNI3A5PdLkQ" entityName="Confidential"/>
+    <elements id="_u4pMcVv5EeyWNI3A5PdLkQ" entityName="Non-Confidential"/>
+  </type>
+</QMLContractType:Dimension>
