@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="Target Platform" sequenceNumber="1">
+	<locations>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="de.uka.ipd.sdq.identifier.feature.feature.group" version="2.1.0.201611171324"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-core-commons/releases/latest/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="de.uka.ipd.sdq.identifier.feature.feature.group" version="2.1.0.201611171324"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-core-commons/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.pcm.feature.feature.group" version="4.1.0.201709282114"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-core-pcm/releases/latest/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.pcm.feature.feature.group" version="4.1.0.201709282114"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-core-pcm/nightly/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.pcm.feature.feature.group" version="4.1.0.201709282114"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-core-pcm/nightly/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<unit id="org.palladiosimulator.pcm.edit" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-editors-commons/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<unit id="org.palladiosimulator.pcm.edit" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-editors-commons/releases/latest"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="de.uka.ipd.sdq.workflow.feature.mdsd.feature.group" version="2.2.3.201709282207"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/releases/latest/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="de.uka.ipd.sdq.workflow.feature.mdsd.feature.group" version="2.2.3.201709282207"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.analyzer.workflow" version="1.0.1.201709282213"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-framework/releases/latest/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.analyzer.workflow" version="1.0.1.201709282213"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-framework/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.modelversioning.emfprofile.feature.feature.group" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/releases/latest/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.modelversioning.emfprofile.feature.feature.group" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.mdsdprofiles.feature.feature.group" version="1.0.1.201609191729"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-mdsdprofiles/releases/latest/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.mdsdprofiles.feature.feature.group" version="1.0.1.201609191729"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-mdsdprofiles/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="de.uka.ipd.sdq.featureconfig" version="2.1.0.201511051634"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-featuremodel/releases/latest"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="de.uka.ipd.sdq.featureconfig" version="2.1.0.201511051634"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-supporting-featuremodel/nightly/"/>
+		</location>
+		<location filter="release" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="tools.mdsd.library.standalone.initialization.log4j.feature.feature.group" version="0.2.0"/>
+			<repository location="https://updatesite.mdsd.tools/library-standaloneinitialization/releases/latest"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="tools.mdsd.library.standalone.initialization.log4j.feature.feature.group" version="0.2.0"/>
+			<repository location="https://updatesite.mdsd.tools/library-standaloneinitialization/nightly/"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<unit id="tools.mdsd.license.epl2.feature.group" version="0.0.0"/>
+			<repository location="https://updatesite.mdsd.tools/build-licensefeature/releases/latest/"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.pcm.confidentiality.context.editor.feature.feature.group" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/fluidtrust/palladio-addons-contextconfidentiality-metamodel/nightly/"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="edu.kit.ipd.sdq.kamp.feature.feature.group" version="0.0.0"/>
+			<repository location="https://raw.githubusercontent.com/KAMP-Research/KAMP/gh-pages"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="org.palladiosimulator.generator.fluent.feature.feature.group" version="0.0.0"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/"/>
+		</location>
+		<location filter="nightly" includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" refresh="true" type="InstallableUnit">
+			<unit id="tools.mdsd.library.emfeditutils" version="0.0.0"/>
+			<repository location="https://updatesite.mdsd.tools/library-emfeditutils/nightly/"/>
+		</location>
+
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
+<unit id="org.palladiosimulator.thirdpartywrapper.feature.feature.group" version="tbd"/>
+<repository location="https://updatesite.palladio-simulator.com/palladio-thirdparty-wrapper/releases/latest/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="nightly" refresh="true">
+<unit id="org.palladiosimulator.thirdpartywrapper.feature.feature.group" version="tbd"/>
+<repository location="https://updatesite.palladio-simulator.com/palladio-thirdparty-wrapper/nightly/"/>
+</location>
+
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<repository location="https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.editor.sirius.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.editor.sirius.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.editor.tree.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.editor.tree.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.model.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.model.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.dddsl.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.dddsl.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.editor.tree.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.editor.tree.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.model.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.model.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.querydsl.feature.feature.group" version="5.1.0.202201190014"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.querydsl.feature.source.feature.group" version="5.1.0.202201190014"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.testresources.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.testresources.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.transformation.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.transformation.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.ui.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.pcm.ui.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.querydsl.feature.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.querydsl.feature.source.feature.group" version="5.1.0.202201190003"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.testresources.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.testresources.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.transformation.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.transformation.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.ui.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.confidentiality.ui.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.editor.sirius.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.editor.sirius.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.editor.tree.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.editor.tree.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.model.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.model.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.transformation.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.diagram.transformation.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.characterized.dsl.feature.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.characterized.dsl.feature.source.feature.group" version="5.1.0.202201182359"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.editor.sirius.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.editor.sirius.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.editor.tree.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.editor.tree.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.model.feature.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.dataflow.dictionary.model.feature.source.feature.group" version="5.1.0.202201182348"/>
+			<unit id="org.palladiosimulator.supporting.prolog.model.feature.feature.group" version="5.1.0.202201182347"/>
+			<unit id="org.palladiosimulator.supporting.prolog.model.feature.source.feature.group" version="5.1.0.202201182347"/>
+			<unit id="org.palladiosimulator.supporting.prolog.serializer.feature.feature.group" version="5.1.0.202201182347"/>
+			<unit id="org.palladiosimulator.supporting.prolog.serializer.feature.source.feature.group" version="5.1.0.202201182347"/>
+			<unit id="org.palladiosimulator.supporting.prolog.ui.feature.feature.group" version="5.1.0.202201182347"/>
+			<unit id="org.palladiosimulator.supporting.prolog.ui.feature.source.feature.group" version="5.1.0.202201182347"/>
+			<unit id="org.prolog4j.core.feature.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.core.feature.source.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.swicli.enabler.feature.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.swicli.enabler.feature.source.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.swicli.feature.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.swicli.feature.source.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.tuprolog.feature.feature.group" version="1.0.0.202201182356"/>
+			<unit id="org.prolog4j.tuprolog.feature.source.feature.group" version="1.0.0.202201182356"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<repository location="https://updatesite.palladio-simulator.com/palladio-addons-peropteryx/nightly/"/>
+			<!--<unit id="de.uka.ipd.sdq.dsexplore.feature.feature.group" version="5.1.0.202201190204"/>-->
+      <unit id="de.uka.ipd.sdq.dsexplore" version="0.0.0"/>
+      <unit id="de.uka.ipd.sdq.dsexplore.qml"/>
+      <unit id="de.uka.ipd.sdq.dsexplore.qml.handling"/>
+
+
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-solver/nightly/"/>
+			<unit id="org.palladiosimulator.solver.feature.feature.group" version="5.1.0.202201190157"/>
+		</location>
+	</locations>
+</target>

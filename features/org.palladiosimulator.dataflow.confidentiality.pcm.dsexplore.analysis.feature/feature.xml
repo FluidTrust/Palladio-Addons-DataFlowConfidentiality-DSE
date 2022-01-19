@@ -8,16 +8,39 @@
       license-feature-version="1.0.0">
 
    <requires>
-      <import feature="org.palladiosimulator.peropteryx" version="5.0.0.qualifier"/>
-      <import feature="org.palladiosimulator.dataflow.confidentiality.pcm" version="5.0.0.qualifier"/>
+      <import plugin="org.apache.log4j"/>
+      <import plugin="org.eclipse.xtext.xbase.lib"/>
+      <import plugin="org.eclipse.xtend.lib"/>
+      <import plugin="org.eclipse.xtend.lib.macro"/>
+      <import plugin="org.modelversioning.emfprofile.registry"/>
+      <import plugin="de.uka.ipd.sdq.stoex.analyser" version="4.3.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.solver" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.workflow" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.dsexplore"/>
+      <import plugin="de.uka.ipd.sdq.dsexplore.qml"/>
+      <import plugin="org.opt4j"/>
+      <import plugin="de.uka.ipd.sdq.workflow.mdsd"/>
+      <import plugin="de.uka.ipd.sdq.dsexplore.qml.handling"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.palladiosimulator.analyzer.workflow"/>
+      <import plugin="org.palladiosimulator.dataflow.confidentiality.pcm.querydsl.workflow" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.supporting.prolog" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.supporting.prolog.api" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.prolog4j.api" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.prolog4j.swicli" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.prolog4j.swicli.enabler" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.supporting.prolog" version="4.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.dataflow.confidentiality.pcm.resources" version="5.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.dataflow.confidentiality.resources" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.supporting.prolog.api" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.dataflow.dictionary.characterized" version="5.1.0" match="greaterOrEqual"/>
    </requires>
-
 
    <plugin
          id="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
 </feature>

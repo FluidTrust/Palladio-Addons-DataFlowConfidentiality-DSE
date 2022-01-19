@@ -17,7 +17,7 @@
 	
 	
 	<properties>
-		<org.palladiosimulator.maven.tychotprefresh.tplocation.2>${project.basedir}/releng/org.palladiosimulator.pcm.confidentiality.context.analysis.targetplatform/org.palladiosimulator.pcm.confidentiality.context.analysis.targetplatform.target</org.palladiosimulator.maven.tychotprefresh.tplocation.2>
+		<org.palladiosimulator.maven.tychotprefresh.tplocation.2>${project.basedir}/releng/org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.targetplatform/org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.targetplatform.target</org.palladiosimulator.maven.tychotprefresh.tplocation.2>
 	    <!--
 		<maven.compiler.target>16</maven.compiler.target>
 	    <maven.compiler.source>16</maven.compiler.source>
