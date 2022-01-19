@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.feature">
+      <category name="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.category"/>
+   </feature>
+   <feature id="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.feature.source">
+      <category name="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.source.category"/>
+   </feature>
+   <category-def name="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.category" label="Dataflow integration into Peropteryx">
+   </category-def>
+   <category-def name="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.category" label="Dataflow integration into Peropteryx Developer Resources">
+   </category-def>
+</site>
+

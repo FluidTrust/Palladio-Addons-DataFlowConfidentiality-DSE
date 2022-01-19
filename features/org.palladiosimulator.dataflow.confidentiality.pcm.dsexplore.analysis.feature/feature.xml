@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.feature"
+      label="Dataflow Peropteryx Analysis"
+      version="5.0.0.qualifier"
+      plugin="org.palladiosimulator.branding"
+      license-feature="org.palladiosimulator.license.epl2"
+      license-feature-version="1.0.0">
+
+   <requires>
+      <import feature="org.palladiosimulator.peropteryx" version="5.0.0.qualifier"/>
+      <import feature="org.palladiosimulator.dataflow.confidentiality.pcm" version="5.0.0.qualifier"/>
+   </requires>
+
+
+   <plugin
+         id="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+
+</feature>

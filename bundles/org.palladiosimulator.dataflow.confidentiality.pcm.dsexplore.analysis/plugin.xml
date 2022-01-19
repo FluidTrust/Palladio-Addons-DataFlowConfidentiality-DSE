@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="de.uka.ipd.sdq.dsexplore.analysis">
+      <analysis
+            delegate="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.prolog.PrologEvaluator"
+            launchConfigContribution="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.ui.ConfidentialityTabGroupProlog"
+            name="Dataflow Analysis"
+            qualityAttribute="edu.kit.sdq.dsis.fluidTrust.confidentiality"
+            qualityAttributeHandler="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.ConfidentialityQualityAttributeDeclaration">
+      </analysis>
+   </extension>
+   <extension
+         point="de.uka.ipd.sdq.dsexplore.analysis">
+      <analysis
+            delegate="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.dsl.DSLEvaluator"
+            launchConfigContribution="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.ui.ConfidentialityTabGroupDSL"
+            name="Dataflow Analysis (DSL)"
+            qualityAttribute="edu.kit.sdq.dsis.fluidTrust.confidentiality"
+            qualityAttributeHandler="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.ConfidentialityQualityAttributeDeclaration">
+      </analysis>
+   </extension>
+</plugin>
