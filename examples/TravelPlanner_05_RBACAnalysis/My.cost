@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cost:CostRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cost="http://sdq.ipd.uka.de/CostModel/1.0" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
+  <cost xsi:type="cost:FixedProcessingResourceCost" fixedInitialCost="1000.0">
+    <processingresourcespecification href="travelPlanner.resourceenvironment#_iTL9YHe8EeyDnMRf-eIHXg"/>
+  </cost>
+  <cost xsi:type="cost:FixedProcessingResourceCost" fixedInitialCost="50000.0">
+    <processingresourcespecification href="travelPlanner.resourceenvironment#_mNUQoHe8EeyDnMRf-eIHXg"/>
+  </cost>
+  <cost xsi:type="cost:FixedProcessingResourceCost" fixedInitialCost="1.0">
+    <processingresourcespecification href="travelPlanner.resourceenvironment#_FRPbsHe9EeyDnMRf-eIHXg"/>
+  </cost>
+  <cost xsi:type="cost:ComponentCost" componentInitialCost="1.0">
+    <repositoryComponent xsi:type="repository:BasicComponent" href="travelPlanner.repository#_qSz5gPVeEeuMKba1Qn68bg"/>
+  </cost>
+</cost:CostRepository>

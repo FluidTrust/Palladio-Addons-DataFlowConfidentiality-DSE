@@ -1,0 +1,9 @@
+-------------- GENERAL ---------------
+Constraint count: 1
+------------ CONSTRAINT 1 ------------
+Constraint name: "RBAC"
+Violations found: 0
+--------- CONSTRAINT DETAILS ---------
+Data Characteristics: "allowedRoles" set to variable "authRoles"
+Condition: NEVER FLOWS
+Destination Characteristics: "ownedRoles" set to variable "compRoles"

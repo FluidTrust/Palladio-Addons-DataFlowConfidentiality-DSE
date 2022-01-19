@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QMLContractType:QMLContractType xmlns:QMLContractType="http:///QMLContractType.ecore" id="_vid0YHe3EeykHc_71xeAeQ" entityName="Cost">
+  <dimensions href="pathmap://PCM_MODELS/Dimension_cost.qmlcontracttype#_r_iViqCrEd-s9uTaURbrKA"/>
+</QMLContractType:QMLContractType>
