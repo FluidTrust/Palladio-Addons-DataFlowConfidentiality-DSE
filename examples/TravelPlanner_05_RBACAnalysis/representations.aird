@@ -36,6 +36,10 @@
     <semanticResources>tmpTest1642595874618.allocation</semanticResources>
     <semanticResources>tmpTest1642595876447.usagemodel</semanticResources>
     <semanticResources>tmpTest1642595876453.allocation</semanticResources>
+    <semanticResources>tmpTest1642682177074.usagemodel</semanticResources>
+    <semanticResources>tmpTest1642682177093.allocation</semanticResources>
+    <semanticResources>tmpTest1642682179288.usagemodel</semanticResources>
+    <semanticResources>tmpTest1642682179296.allocation</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_K37ccPVdEeuMKba1Qn68bg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius/description/sirius.odesign#//@ownedViewpoints[name='PCM-Confidentiality']"/>
     </ownedViews>

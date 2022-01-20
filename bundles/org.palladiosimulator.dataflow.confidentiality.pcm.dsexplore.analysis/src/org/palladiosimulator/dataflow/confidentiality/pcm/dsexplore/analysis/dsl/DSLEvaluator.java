@@ -2,6 +2,7 @@ package org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.ds
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.emf.common.util.URI;
@@ -43,10 +44,16 @@ public class DSLEvaluator extends ConfidentialityEvaluator {
 
     }
 
-    private boolean successfull(final List<String> list) {
-        return !list.stream()
-            .filter(e -> e.startsWith("Violations found:"))
-            .allMatch(e -> e.equals("Violations found: 0"));
+    private boolean successfull(List<String> list) {
+
+        var matcher = Pattern.compile("Violations found: \\d+")
+            .matcher(list.get(0));
+        if (matcher.find()) {
+            var outputString = matcher.group();
+            return Integer.parseInt(outputString.replace("Violations found:", "")
+                .trim()) != 0;
+        }
+        throw new IllegalStateException();
     }
 
 }

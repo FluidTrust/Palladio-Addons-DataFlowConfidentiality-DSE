@@ -10,14 +10,18 @@
     <resourceContainer_ResourceEnvironment id="_9PmBsPVgEeuMKba1Qn68bg" entityName="Mobile">
       <activeResourceSpecifications_ResourceContainer id="_mNUQoHe8EeyDnMRf-eIHXg">
         <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        <processingRate_ProcessingResourceSpecification specification="1"/>
       </activeResourceSpecifications_ResourceContainer>
     </resourceContainer_ResourceEnvironment>
     <resourceContainer_ResourceEnvironment id="_99dNQPVgEeuMKba1Qn68bg" entityName="AirlineServer">
-      <activeResourceSpecifications_ResourceContainer id="_FRPbsHe9EeyDnMRf-eIHXg"/>
+      <activeResourceSpecifications_ResourceContainer id="_FRPbsHe9EeyDnMRf-eIHXg">
+        <processingRate_ProcessingResourceSpecification specification="1"/>
+      </activeResourceSpecifications_ResourceContainer>
     </resourceContainer_ResourceEnvironment>
     <resourceContainer_ResourceEnvironment id="_yKifUXe2EeykHc_71xeAeQ" entityName="FailureCredit">
       <activeResourceSpecifications_ResourceContainer id="_iTL9YHe8EeyDnMRf-eIHXg">
         <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        <processingRate_ProcessingResourceSpecification specification="1"/>
       </activeResourceSpecifications_ResourceContainer>
     </resourceContainer_ResourceEnvironment>
   </resourceenvironment:ResourceEnvironment>

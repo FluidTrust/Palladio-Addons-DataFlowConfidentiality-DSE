@@ -18,7 +18,9 @@ public abstract class ConfidentialityTab extends AbstractLaunchConfigurationTab 
 
     @Override
     public void setDefaults(final ILaunchConfigurationWorkingCopy configuration) {
-        this.analysisDefinition.setText("");
+        if (this.analysisDefinition != null) {
+            this.analysisDefinition.setText("");
+        }
     }
 
     @Override
