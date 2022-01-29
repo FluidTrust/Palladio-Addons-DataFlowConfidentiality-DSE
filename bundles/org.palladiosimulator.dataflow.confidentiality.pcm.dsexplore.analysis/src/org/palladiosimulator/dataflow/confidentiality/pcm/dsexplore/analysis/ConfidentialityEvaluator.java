@@ -110,7 +110,7 @@ public abstract class ConfidentialityEvaluator extends AbstractAnalysis implemen
 
     private boolean isCorrectFileEnding(final Path file) {
         final var filename = file.toString();
-        final var list = List.of("pddc", "characteristics", "repository", "system", "resourceenvironment");
+        final var list = List.of("pddc", "characteristics", "repository", "resourceenvironment");
         return list.stream()
             .anyMatch(filename::endsWith);
     }
