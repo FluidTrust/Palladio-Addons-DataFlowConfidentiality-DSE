@@ -7,23 +7,8 @@
         <throughput_CommunicationLinkResourceSpecification/>
       </communicationLinkResourceSpecifications_LinkingResource>
     </linkingResources__ResourceEnvironment>
-    <resourceContainer_ResourceEnvironment id="_9PmBsPVgEeuMKba1Qn68bg" entityName="Mobile">
-      <activeResourceSpecifications_ResourceContainer id="_mNUQoHe8EeyDnMRf-eIHXg">
-        <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
-        <processingRate_ProcessingResourceSpecification specification="1"/>
-      </activeResourceSpecifications_ResourceContainer>
-    </resourceContainer_ResourceEnvironment>
-    <resourceContainer_ResourceEnvironment id="_99dNQPVgEeuMKba1Qn68bg" entityName="AirlineServer">
-      <activeResourceSpecifications_ResourceContainer id="_FRPbsHe9EeyDnMRf-eIHXg">
-        <processingRate_ProcessingResourceSpecification specification="1"/>
-      </activeResourceSpecifications_ResourceContainer>
-    </resourceContainer_ResourceEnvironment>
-    <resourceContainer_ResourceEnvironment id="_yKifUXe2EeykHc_71xeAeQ" entityName="FailureCredit">
-      <activeResourceSpecifications_ResourceContainer id="_iTL9YHe8EeyDnMRf-eIHXg">
-        <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
-        <processingRate_ProcessingResourceSpecification specification="1"/>
-      </activeResourceSpecifications_ResourceContainer>
-    </resourceContainer_ResourceEnvironment>
+    <resourceContainer_ResourceEnvironment id="_9PmBsPVgEeuMKba1Qn68bg" entityName="Mobile"/>
+    <resourceContainer_ResourceEnvironment id="_99dNQPVgEeuMKba1Qn68bg" entityName="AirlineServer"/>
   </resourceenvironment:ResourceEnvironment>
   <emfprofileapplication:ProfileApplication>
     <stereotypeApplications xsi:type="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile:Characterisable" appliedTo="_99dNQPVgEeuMKba1Qn68bg">
@@ -33,10 +18,6 @@
     <stereotypeApplications xsi:type="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile:Characterisable" appliedTo="_9PmBsPVgEeuMKba1Qn68bg">
       <extension href="../../plugin/org.palladiosimulator.dataflow.confidentiality.pcm.model.profile/profile.emfprofile_diagram#_5cGYIBB1EeuGl5fMWzDLAw"/>
       <characteristics xsi:type="characteristics:EnumCharacteristic" href="travelPlanner.resourceenvironment.characteristics#_XyclIPXsEeut8bxiE9EShA"/>
-    </stereotypeApplications>
-    <stereotypeApplications xsi:type="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile:Characterisable" appliedTo="_yKifUXe2EeykHc_71xeAeQ">
-      <extension href="../../plugin/org.palladiosimulator.dataflow.confidentiality.pcm.model.profile/profile.emfprofile_diagram#_5cGYIBB1EeuGl5fMWzDLAw"/>
-      <characteristics xsi:type="characteristics:EnumCharacteristic" href="travelPlanner.resourceenvironment.characteristics#_Ulyb4PXsEeut8bxiE9EShA"/>
     </stereotypeApplications>
     <importedProfiles nsURI="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile" location="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.model.profile/profile.emfprofile_diagram"/>
   </emfprofileapplication:ProfileApplication>

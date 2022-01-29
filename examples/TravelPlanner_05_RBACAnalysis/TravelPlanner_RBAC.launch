@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="org.palladiosimulator.dataflow.confidentiality.pcm.querydsl.ui.custom.launchConfigurationType.dslanalysis">
-    <stringAttribute key="allocation" value="/Test/default.allocation"/>
-    <stringAttribute key="query" value="/Test/constraint.DCPDSL"/>
-    <stringAttribute key="result" value="/Test/result.txt"/>
-    <stringAttribute key="usageModel" value="/Test/default.usagemodel"/>
-</launchConfiguration>

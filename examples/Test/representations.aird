@@ -151,6 +151,15 @@
     <semanticResources>tmpTest1643024605557.allocation</semanticResources>
     <semanticResources>tmpTest1643024605719.usagemodel</semanticResources>
     <semanticResources>tmpTest1643024605723.allocation</semanticResources>
+    <semanticResources>tmpTest/default.resourceenvironment</semanticResources>
+    <semanticResources>tmpTest/default.resourceenvironment.characteristics</semanticResources>
+    <semanticResources>tmpTest/default.repository</semanticResources>
+    <semanticResources>tmpTest/default.usagemodel</semanticResources>
+    <semanticResources>tmpTest/default.usagemodel.characteristics</semanticResources>
+    <semanticResources>tmpTest/default.system</semanticResources>
+    <semanticResources>tmpTest/dic.pddc</semanticResources>
+    <semanticResources>tmpTest/constraint.DCPDSL</semanticResources>
+    <semanticResources>tmpTest/default.allocation</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_sLGRsDcJEee4toGFhQNiDA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.allocation/description/allocation.odesign#//@ownedViewpoints[name='Allocation']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sNhTkDcJEee4toGFhQNiDA" name="Allocation Diagram" repPath="#_sNhTkTcJEee4toGFhQNiDA">
