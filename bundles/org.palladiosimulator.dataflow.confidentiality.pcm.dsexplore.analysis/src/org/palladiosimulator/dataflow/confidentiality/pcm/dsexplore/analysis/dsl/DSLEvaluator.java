@@ -85,12 +85,14 @@ public class DSLEvaluator extends ConfidentialityEvaluator {
 
         final var matcher = Pattern.compile("Violations found: \\d+")
             .matcher(list.get(0));
-        if (matcher.find()) {
+        while (matcher.find()) {
             final var outputString = matcher.group();
-            return Integer.parseInt(outputString.replace("Violations found:", "")
-                .trim()) != 0;
+            if (Integer.parseInt(outputString.replace("Violations found:", "")
+                .trim()) != 0) {
+                return true;
+            }
         }
-        throw new IllegalStateException();
+        return false;
     }
 
 }

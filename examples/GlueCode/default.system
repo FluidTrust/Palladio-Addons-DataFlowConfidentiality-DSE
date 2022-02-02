@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_84D0kCHcEd6lJo4DCALHMw" entityName="BWUniCluster">
+  <assemblyContexts__ComposedStructure id="_SztzEHOoEey01Z3YtODCZw" entityName="Assembly_AuthService">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_KNwmsHOkEey01Z3YtODCZw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_d0CF4HOoEey01Z3YtODCZw" entityName="Assembly_AdminService">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_em1_sHOkEey01Z3YtODCZw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_tFoAoHOoEey01Z3YtODCZw" entityName="Assembly_ConfigProvider">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_OF1EcHOkEey01Z3YtODCZw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_wGkCEHOoEey01Z3YtODCZw" entityName="Assembly_PublicKeyProvider">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_Wu2vwHOkEey01Z3YtODCZw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_xrBecHOoEey01Z3YtODCZw" entityName="Assembly_DBProvider">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_R2lZQHOkEey01Z3YtODCZw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_4vQWMHOoEey01Z3YtODCZw" entityName="Assembly_FileService">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_fzVoAHOkEey01Z3YtODCZw"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_kcj5EHOoEey01Z3YtODCZw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_gAn5QHOoEey01Z3YtODCZw" assemblyContext_ProvidedDelegationConnector="_d0CF4HOoEey01Z3YtODCZw">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_0l04IHOnEey01Z3YtODCZw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_l_BxYHOoEey01Z3YtODCZw" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_atDG0HOoEey01Z3YtODCZw" assemblyContext_ProvidedDelegationConnector="_SztzEHOoEey01Z3YtODCZw">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_coqmUHOlEey01Z3YtODCZw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_1ZeGIHOoEey01Z3YtODCZw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_SztzEHOoEey01Z3YtODCZw" providingAssemblyContext_AssemblyConnector="_tFoAoHOoEey01Z3YtODCZw">
+    <providedRole_AssemblyConnector href="default.repository#_uVqMgHOlEey01Z3YtODCZw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_vSWeQHOlEey01Z3YtODCZw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_2KIuEHOoEey01Z3YtODCZw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_SztzEHOoEey01Z3YtODCZw" providingAssemblyContext_AssemblyConnector="_wGkCEHOoEey01Z3YtODCZw">
+    <providedRole_AssemblyConnector href="default.repository#_sELcoHOmEey01Z3YtODCZw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_6EGUIHOmEey01Z3YtODCZw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_4L05AHOoEey01Z3YtODCZw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_SztzEHOoEey01Z3YtODCZw" providingAssemblyContext_AssemblyConnector="_xrBecHOoEey01Z3YtODCZw">
+    <providedRole_AssemblyConnector href="default.repository#_Q00vYHOmEey01Z3YtODCZw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_SsxIcHOmEey01Z3YtODCZw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_6ijf0HOoEey01Z3YtODCZw" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_SztzEHOoEey01Z3YtODCZw" providingAssemblyContext_AssemblyConnector="_4vQWMHOoEey01Z3YtODCZw">
+    <providedRole_AssemblyConnector href="default.repository#_Ko-bsHOnEey01Z3YtODCZw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_Mw_4IHOnEey01Z3YtODCZw"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_atDG0HOoEey01Z3YtODCZw" entityName="UserInterfaceProvidedRole">
+    <providedInterface__OperationProvidedRole href="default.repository#_l2QMsHOkEey01Z3YtODCZw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_gAn5QHOoEey01Z3YtODCZw" entityName="AdminInterfaceProvidedRole">
+    <providedInterface__OperationProvidedRole href="default.repository#_ZpzWkHOnEey01Z3YtODCZw"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

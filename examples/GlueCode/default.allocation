@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_JiPBICHdEd6lJo4DCALHMw" entityName="defaultAllocation">
+  <targetResourceEnvironment_Allocation href="My.resourceenvironment#/0"/>
+  <system_Allocation href="default.system#_84D0kCHcEd6lJo4DCALHMw"/>
+  <allocationContexts_Allocation id="_B2wGMHOpEey01Z3YtODCZw" entityName="Allocation_Assembly_FileService">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_-i0FsHOnEey01Z3YtODCZw"/>
+    <assemblyContext_AllocationContext href="default.system#_4vQWMHOoEey01Z3YtODCZw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_C_XUEHOpEey01Z3YtODCZw" entityName="Allocation_Assembly_DBProvider">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+    <assemblyContext_AllocationContext href="default.system#_xrBecHOoEey01Z3YtODCZw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_DbhEkHOpEey01Z3YtODCZw" entityName="Allocation_Assembly_AdminService">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_75er8HOnEey01Z3YtODCZw"/>
+    <assemblyContext_AllocationContext href="default.system#_d0CF4HOoEey01Z3YtODCZw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_D28cUHOpEey01Z3YtODCZw" entityName="Allocation_Assembly_ConfigProvider">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+    <assemblyContext_AllocationContext href="default.system#_tFoAoHOoEey01Z3YtODCZw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_EToYUHOpEey01Z3YtODCZw" entityName="Allocation_Assembly_AuthService">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+    <assemblyContext_AllocationContext href="default.system#_SztzEHOoEey01Z3YtODCZw"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Gy4B8HOpEey01Z3YtODCZw" entityName="Allocation_Assembly_PublicKeyProvider">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+    <assemblyContext_AllocationContext href="default.system#_wGkCEHOoEey01Z3YtODCZw"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

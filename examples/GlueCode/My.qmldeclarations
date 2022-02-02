@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QMLDeclarations:QMLDeclarations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:QMLContract="http:///QMLContract.ecore" xmlns:QMLDeclarations="http:///QMLDeclarations.ecore" xmlns:QMLProfile="http:///QMLProfile.ecore" id="_FARpsIQBEey3Uv8avCjmrw">
+  <qmlDeclarations xsi:type="QMLContract:SimpleQMLContract" id="_RBoiwoQBEey3Uv8avCjmrw" entityName="Confidentiality">
+    <criteria xsi:type="QMLContract:Objective" id="_S9nuUIQBEey3Uv8avCjmrw">
+      <dimension href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype#_lzV00Fv5EeyWNI3A5PdLkQ"/>
+      <aspects xsi:type="QMLContract:Value" id="_UlzNFIQBEey3Uv8avCjmrw">
+        <aspectRequirement xsi:type="QMLContract:Goal" id="_VP-ygYQBEey3Uv8avCjmrw">
+          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_V-GcwIQBEey3Uv8avCjmrw" value="1.0"/>
+        </aspectRequirement>
+      </aspects>
+    </criteria>
+    <contractType href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/ConfidentialityContract.qmlcontracttype#_BBLcEHe6EeyqWdwf1u0RUg"/>
+  </qmlDeclarations>
+  <qmlDeclarations xsi:type="QMLProfile:SimpleQMLProfile" id="_qHd-wIQBEey3Uv8avCjmrw">
+    <usageModel href="default.usagemodel#/0"/>
+    <requirements xsi:type="QMLProfile:UsageScenarioRequirement" id="_q9MF0IQBEey3Uv8avCjmrw" requireContract="_RBoiwoQBEey3Uv8avCjmrw">
+      <usageScenario href="default.usagemodel#_VL-OcHOpEey01Z3YtODCZw"/>
+    </requirements>
+  </qmlDeclarations>
+</QMLDeclarations:QMLDeclarations>

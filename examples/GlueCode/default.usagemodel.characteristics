@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<characteristics:Characteristics xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://palladiosimulator.org/dataflow/dictionary/characterized/1.0" xmlns:characteristics="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/characteristics" id="_kDSykHOqEey01Z3YtODCZw">
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_kDx6wHOqEey01Z3YtODCZw">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+    <values href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@0.literals@1"/>
+  </characteristics>
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_mwZ5EHOqEey01Z3YtODCZw">
+    <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+    <values href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@0.literals@3"/>
+  </characteristics>
+</characteristics:Characteristics>

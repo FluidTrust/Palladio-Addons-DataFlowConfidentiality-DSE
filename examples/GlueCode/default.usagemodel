@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://palladiosimulator.org/dataflow/dictionary/characterized/1.0" xmlns:characteristics="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/characteristics" xmlns:confidentiality="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0" xmlns:emfprofileapplication="http://www.modelversioning.org/emfprofile/application/1.1" xmlns:expression="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/expression" xmlns:expressions="http://palladiosimulator.org/dataflow/dictionary/characterized/expressions/1.0" xmlns:org.palladiosimulator.dataflow.confidentiality.pcm.model.profile="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2">
+  <usagemodel:UsageModel>
+    <usageScenario_UsageModel id="_VL-OcHOpEey01Z3YtODCZw" entityName="UserLoginAndRequest">
+      <scenarioBehaviour_UsageScenario id="_YZNmgHOpEey01Z3YtODCZw" entityName="ScenarioBehaviour">
+        <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_YZNmgXOpEey01Z3YtODCZw" successor="_au2BIHOpEey01Z3YtODCZw"/>
+        <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_YZNmgnOpEey01Z3YtODCZw" predecessor="_c6YEkHOpEey01Z3YtODCZw"/>
+        <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_au2BIHOpEey01Z3YtODCZw" entityName="callLogin" successor="_c6YEkHOpEey01Z3YtODCZw" predecessor="_YZNmgXOpEey01Z3YtODCZw">
+          <providedRole_EntryLevelSystemCall href="default.system#_atDG0HOoEey01Z3YtODCZw"/>
+          <operationSignature__EntryLevelSystemCall href="default.repository#_5LtlgHOkEey01Z3YtODCZw"/>
+          <outputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_l4vb4HOrEey01Z3YtODCZw"/>
+              <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_l4vb4XOrEey01Z3YtODCZw">
+                <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+              </rhs>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="request"/>
+          </outputParameterUsages_EntryLevelSystemCall>
+          <inputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_QohxEHOsEey01Z3YtODCZw">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+              </lhs>
+              <rhs xsi:type="expressions:ContainerCharacteristicReference" id="_QohxEXOsEey01Z3YtODCZw">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+              </rhs>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="request"/>
+          </inputParameterUsages_EntryLevelSystemCall>
+        </actions_ScenarioBehaviour>
+        <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_c6YEkHOpEey01Z3YtODCZw" entityName="callRequest" successor="_YZNmgnOpEey01Z3YtODCZw" predecessor="_au2BIHOpEey01Z3YtODCZw">
+          <providedRole_EntryLevelSystemCall href="default.system#_atDG0HOoEey01Z3YtODCZw"/>
+          <operationSignature__EntryLevelSystemCall href="default.repository#_N5p0MHOlEey01Z3YtODCZw"/>
+          <outputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_McV8N3O6Eey01Z3YtODCZw"/>
+              <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_McV8OHO6Eey01Z3YtODCZw">
+                <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+              </rhs>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="files"/>
+          </outputParameterUsages_EntryLevelSystemCall>
+          <inputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_zBJchHOrEey01Z3YtODCZw"/>
+              <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_zBJchXOrEey01Z3YtODCZw">
+                <namedReference xsi:type="stoex:VariableReference" referenceName="request"/>
+              </rhs>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="request"/>
+          </inputParameterUsages_EntryLevelSystemCall>
+        </actions_ScenarioBehaviour>
+      </scenarioBehaviour_UsageScenario>
+    </usageScenario_UsageModel>
+    <usageScenario_UsageModel id="_pM-eoHOpEey01Z3YtODCZw" entityName="AdminDirectAccessAdmin">
+      <scenarioBehaviour_UsageScenario id="_vczd8HOpEey01Z3YtODCZw" entityName="ScenarioBehaviour">
+        <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_vc0FAHOpEey01Z3YtODCZw" successor="_xlEK8HOpEey01Z3YtODCZw"/>
+        <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_vc0FAXOpEey01Z3YtODCZw" predecessor="_xlEK8HOpEey01Z3YtODCZw"/>
+        <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_xlEK8HOpEey01Z3YtODCZw" entityName="callAdmin" successor="_vc0FAXOpEey01Z3YtODCZw" predecessor="_vc0FAHOpEey01Z3YtODCZw">
+          <providedRole_EntryLevelSystemCall href="default.system#_gAn5QHOoEey01Z3YtODCZw"/>
+          <operationSignature__EntryLevelSystemCall href="default.repository#_bWJjoHOnEey01Z3YtODCZw"/>
+          <outputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_B2xEpnO6Eey01Z3YtODCZw"/>
+              <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_B2xEp3O6Eey01Z3YtODCZw">
+                <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+              </rhs>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="response"/>
+          </outputParameterUsages_EntryLevelSystemCall>
+          <inputParameterUsages_EntryLevelSystemCall>
+            <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+              <specification_VariableCharacterisation specification="false"/>
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_Oluy4HOsEey01Z3YtODCZw">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+              </lhs>
+              <rhs xsi:type="expressions:ContainerCharacteristicReference" id="_Oluy4XOsEey01Z3YtODCZw">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+              </rhs>
+            </variableCharacterisation_VariableUsage>
+            <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="request"/>
+          </inputParameterUsages_EntryLevelSystemCall>
+        </actions_ScenarioBehaviour>
+      </scenarioBehaviour_UsageScenario>
+    </usageScenario_UsageModel>
+  </usagemodel:UsageModel>
+  <emfprofileapplication:ProfileApplication>
+    <stereotypeApplications xsi:type="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile:Characterisable" appliedTo="_VL-OcHOpEey01Z3YtODCZw">
+      <extension href="../../plugin/org.palladiosimulator.dataflow.confidentiality.pcm.model.profile/profile.emfprofile_diagram#_yqyHQBBzEeucCo3FRAS_1w"/>
+      <characteristics xsi:type="characteristics:EnumCharacteristic" href="default.usagemodel.characteristics#_kDx6wHOqEey01Z3YtODCZw"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile:Characterisable" appliedTo="_pM-eoHOpEey01Z3YtODCZw">
+      <extension href="../../plugin/org.palladiosimulator.dataflow.confidentiality.pcm.model.profile/profile.emfprofile_diagram#_yqyHQBBzEeucCo3FRAS_1w"/>
+      <characteristics xsi:type="characteristics:EnumCharacteristic" href="default.usagemodel.characteristics#_mwZ5EHOqEey01Z3YtODCZw"/>
+    </stereotypeApplications>
+    <importedProfiles nsURI="org.palladiosimulator.dataflow.confidentiality.pcm.model.profile" location="platform:/plugin/org.palladiosimulator.dataflow.confidentiality.pcm.model.profile/profile.emfprofile_diagram"/>
+  </emfprofileapplication:ProfileApplication>
+</xmi:XMI>

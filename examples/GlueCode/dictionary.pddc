@@ -1,0 +1,34 @@
+dictionary id "_J6VFoHOqEey01Z3YtODCZw"
+
+// Describes the type of person accessing the system
+// Outsiders are outside the permitted IP rang
+// Unauthenticated are inside the range but not logged in
+// Users are logged in
+// Administrators have special permissions
+enum UserLevel {
+	Outside
+	Unauthenticated
+	User
+	Admin
+}
+
+// Describes the type of data flowing in the system
+// Restricted information is only used internally, e.g., to authenticate the user
+// Internal information may flow to the user only after the level has been cleared in a login node
+// External information is unrestricted
+enum DataLevel {
+	Restricted
+	Internal
+	External
+}
+
+// This type is only used to identify specific nodes and represents the labeled resources.
+enum Identity {
+	LoginNode
+	InternalNode
+	AdminNode
+}
+ 
+enumCharacteristicType UserLevel using UserLevel
+enumCharacteristicType DataLevel using DataLevel
+enumCharacteristicType Identity using Identity

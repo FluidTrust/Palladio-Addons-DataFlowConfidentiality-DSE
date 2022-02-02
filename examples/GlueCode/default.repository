@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://palladiosimulator.org/dataflow/dictionary/characterized/1.0" xmlns:confidentiality="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0" xmlns:expression="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/expression" xmlns:expressions="http://palladiosimulator.org/dataflow/dictionary/characterized/expressions/1.0" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_dqFLECHbEd6tG9VclJz3cw" entityName="defaultRepository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_KNwmsHOkEey01Z3YtODCZw" entityName="AuthService">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_coqmUHOlEey01Z3YtODCZw" entityName="AuthService.UserInterface" providedInterface__OperationProvidedRole="_l2QMsHOkEey01Z3YtODCZw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_vSWeQHOlEey01Z3YtODCZw" entityName="AuthService.ConfigInterface" requiredInterface__OperationRequiredRole="_ev0gEHOlEey01Z3YtODCZw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_SsxIcHOmEey01Z3YtODCZw" entityName="AuthService.DBInterface" requiredInterface__OperationRequiredRole="_4QUe0HOlEey01Z3YtODCZw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_6EGUIHOmEey01Z3YtODCZw" entityName="AuthService.PublicKeyInterface" requiredInterface__OperationRequiredRole="_Wk7s0HOmEey01Z3YtODCZw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_Mw_4IHOnEey01Z3YtODCZw" entityName="AuthService.FileServiceInterface" requiredInterface__OperationRequiredRole="_E9VHgHOnEey01Z3YtODCZw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_co524HOlEey01Z3YtODCZw" describedService__SEFF="_5LtlgHOkEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_co6d8HOlEey01Z3YtODCZw" successor_AbstractAction="_8p5tMHOwEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_co6d8XOlEey01Z3YtODCZw" predecessor_AbstractAction="_TsSOQHOyEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_8p5tMHOwEey01Z3YtODCZw" entityName="call_readConfig" predecessor_AbstractAction="_co6d8HOlEey01Z3YtODCZw" successor_AbstractAction="_UPA9UHOxEey01Z3YtODCZw" calledService_ExternalService="_rTZVYHOlEey01Z3YtODCZw" role_ExternalService="_vSWeQHOlEey01Z3YtODCZw">
+        <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_F5EykHOxEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_F5EykXOxEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="config"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_UPA9UHOxEey01Z3YtODCZw" entityName="call_getEntry" predecessor_AbstractAction="_8p5tMHOwEey01Z3YtODCZw" successor_AbstractAction="_1Su14HOxEey01Z3YtODCZw" calledService_ExternalService="_6EJM4HOlEey01Z3YtODCZw" role_ExternalService="_SsxIcHOmEey01Z3YtODCZw">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_jd6JYHOxEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_jd6JYXOxEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="config"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="config"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_q-EvQHOxEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_q-EvQXOxEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="uid"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_1Su14HOxEey01Z3YtODCZw" entityName="ExternalCallAction3" predecessor_AbstractAction="_UPA9UHOxEey01Z3YtODCZw" successor_AbstractAction="_TsSOQHOyEey01Z3YtODCZw" calledService_ExternalService="_bqobUHOmEey01Z3YtODCZw" role_ExternalService="_6EGUIHOmEey01Z3YtODCZw">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_8h39MXOxEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_8h39MnOxEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="config"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="config"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_DprtXnOyEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_DprtX3OyEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="uid"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="UID"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_TsSOQHOyEey01Z3YtODCZw" entityName="return cleared request" predecessor_AbstractAction="_1Su14HOxEey01Z3YtODCZw" successor_AbstractAction="_co6d8XOlEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_XDtAmXOzEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:False" id="_XDtAmnOzEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_XDtAm3OzEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@0.literals@2"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_XDtAnHOzEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_cp-08HOlEey01Z3YtODCZw" describedService__SEFF="_N5p0MHOlEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_cp_cAHOlEey01Z3YtODCZw" successor_AbstractAction="_o0PfcHOyEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_cp_cAXOlEey01Z3YtODCZw" predecessor_AbstractAction="_2bYqkHOyEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_o0PfcHOyEey01Z3YtODCZw" entityName="ExternalCallAction1" predecessor_AbstractAction="_cp_cAHOlEey01Z3YtODCZw" successor_AbstractAction="_2bYqkHOyEey01Z3YtODCZw" calledService_ExternalService="_GVks0HOnEey01Z3YtODCZw" role_ExternalService="_Mw_4IHOnEey01Z3YtODCZw">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_ui5rcHOyEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_ui5rcXOyEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="request"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="request"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_1vlUkHOyEey01Z3YtODCZw"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_1vlUkXOyEey01Z3YtODCZw">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="files"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_2bYqkHOyEey01Z3YtODCZw" entityName="return cleared files" predecessor_AbstractAction="_o0PfcHOyEey01Z3YtODCZw" successor_AbstractAction="_cp_cAXOlEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_rM5NQHSAEeygZrXXtO4iNg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+            </lhs>
+            <rhs xsi:type="expressions:False" id="_rM5NQXSAEeygZrXXtO4iNg"/>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_rM5NQnSAEeygZrXXtO4iNg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@1.literals@2"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_rM5NQ3SAEeygZrXXtO4iNg"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_OF1EcHOkEey01Z3YtODCZw" entityName="ConfigProvider">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_uVqMgHOlEey01Z3YtODCZw" entityName="ConfigProvider.ConfigInterface" providedInterface__OperationProvidedRole="_ev0gEHOlEey01Z3YtODCZw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_uVqzkHOlEey01Z3YtODCZw" describedService__SEFF="_rTZVYHOlEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_uVqzkXOlEey01Z3YtODCZw" successor_AbstractAction="_K_yNoHOxEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_uVqzknOlEey01Z3YtODCZw" predecessor_AbstractAction="_K_yNoHOxEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_K_yNoHOxEey01Z3YtODCZw" entityName="return config" predecessor_AbstractAction="_uVqzkXOlEey01Z3YtODCZw" successor_AbstractAction="_uVqzknOlEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_P7ujMHOxEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_P7ujMXOxEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_R2lZQHOkEey01Z3YtODCZw" entityName="DBProvider">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Q00vYHOmEey01Z3YtODCZw" entityName="DBProvider.DBInterface" providedInterface__OperationProvidedRole="_4QUe0HOlEey01Z3YtODCZw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_Q01WcHOmEey01Z3YtODCZw" describedService__SEFF="_6EJM4HOlEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_Q01WcXOmEey01Z3YtODCZw" successor_AbstractAction="_sf3SEHOxEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Q01WcnOmEey01Z3YtODCZw" predecessor_AbstractAction="_sf3SEHOxEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_sf3SEHOxEey01Z3YtODCZw" entityName="return entry" predecessor_AbstractAction="_Q01WcXOmEey01Z3YtODCZw" successor_AbstractAction="_Q01WcnOmEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_w-qYoHOxEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_w-qYoXOxEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_Wu2vwHOkEey01Z3YtODCZw" entityName="PublicKeyProvider">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_sELcoHOmEey01Z3YtODCZw" entityName="PublicKeyProvider.PublicKeyInterface" providedInterface__OperationProvidedRole="_Wk7s0HOmEey01Z3YtODCZw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_sEMDsHOmEey01Z3YtODCZw" describedService__SEFF="_bqobUHOmEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_sEMDsXOmEey01Z3YtODCZw" successor_AbstractAction="_F_tJgHOyEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_sEMDsnOmEey01Z3YtODCZw" predecessor_AbstractAction="_F_tJgHOyEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_F_tJgHOyEey01Z3YtODCZw" entityName="return key" predecessor_AbstractAction="_sEMDsXOmEey01Z3YtODCZw" successor_AbstractAction="_sEMDsnOmEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_J2bjcHOyEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_J2bjcXOyEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_em1_sHOkEey01Z3YtODCZw" entityName="AdminService">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_0l04IHOnEey01Z3YtODCZw" entityName="AdminService.AdminInterface" providedInterface__OperationProvidedRole="_ZpzWkHOnEey01Z3YtODCZw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_0l1fMHOnEey01Z3YtODCZw" describedService__SEFF="_bWJjoHOnEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_0l1fMXOnEey01Z3YtODCZw" successor_AbstractAction="_bObYwHOsEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_0l1fMnOnEey01Z3YtODCZw" predecessor_AbstractAction="_bObYwHOsEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_bObYwHOsEey01Z3YtODCZw" entityName="return response" predecessor_AbstractAction="_0l1fMXOnEey01Z3YtODCZw" successor_AbstractAction="_0l1fMnOnEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_avjUUHPAEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+            </lhs>
+            <rhs xsi:type="expressions:False" id="_avjUUXPAEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_avjUUnPAEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@1.literals@2"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_avjUU3PAEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_fzVoAHOkEey01Z3YtODCZw" entityName="FileService">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Ko-bsHOnEey01Z3YtODCZw" entityName="FileService.FileServiceInterface" providedInterface__OperationProvidedRole="_E9VHgHOnEey01Z3YtODCZw"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_Ko_CwHOnEey01Z3YtODCZw" describedService__SEFF="_GVks0HOnEey01Z3YtODCZw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_Ko_CwXOnEey01Z3YtODCZw" successor_AbstractAction="_GaJ0YHOzEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Ko_CwnOnEey01Z3YtODCZw" predecessor_AbstractAction="_GaJ0YHOzEey01Z3YtODCZw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_GaJ0YHOzEey01Z3YtODCZw" entityName="return non-cleared files" predecessor_AbstractAction="_Ko_CwXOnEey01Z3YtODCZw" successor_AbstractAction="_Ko_CwnOnEey01Z3YtODCZw">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_K9qb4nOzEey01Z3YtODCZw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@1"/>
+              <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@1.literals@1"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_K9qb43OzEey01Z3YtODCZw"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_l2QMsHOkEey01Z3YtODCZw" entityName="UserInterface">
+    <signatures__OperationInterface id="_5LtlgHOkEey01Z3YtODCZw" entityName="login" returnType__OperationSignature="_7XIUMHOkEey01Z3YtODCZw">
+      <parameters__OperationSignature dataType__Parameter="_7XIUMHOkEey01Z3YtODCZw" parameterName="request"/>
+      <parameters__OperationSignature dataType__Parameter="__IxZ0HOkEey01Z3YtODCZw" parameterName="credentials"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_N5p0MHOlEey01Z3YtODCZw" entityName="requestFiles" returnType__OperationSignature="_UXZ6wHOlEey01Z3YtODCZw">
+      <parameters__OperationSignature dataType__Parameter="_7XIUMHOkEey01Z3YtODCZw" parameterName="request"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_ev0gEHOlEey01Z3YtODCZw" entityName="ConfigInterface">
+    <signatures__OperationInterface id="_rTZVYHOlEey01Z3YtODCZw" entityName="readConfig" returnType__OperationSignature="_oqojYHOlEey01Z3YtODCZw"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_4QUe0HOlEey01Z3YtODCZw" entityName="DBInterface">
+    <signatures__OperationInterface id="_6EJM4HOlEey01Z3YtODCZw" entityName="getEntry" returnType__OperationSignature="_-YAOwHOlEey01Z3YtODCZw">
+      <parameters__OperationSignature dataType__Parameter="__IxZ0HOkEey01Z3YtODCZw" parameterName="credentials"/>
+      <parameters__OperationSignature dataType__Parameter="_oqojYHOlEey01Z3YtODCZw" parameterName="config"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_Wk7s0HOmEey01Z3YtODCZw" entityName="PublicKeyInterface">
+    <signatures__OperationInterface id="_bqobUHOmEey01Z3YtODCZw" entityName="getKey" returnType__OperationSignature="_dEWAQHOmEey01Z3YtODCZw">
+      <parameters__OperationSignature dataType__Parameter="_oqojYHOlEey01Z3YtODCZw" parameterName="config"/>
+      <parameters__OperationSignature dataType__Parameter="_-YAOwHOlEey01Z3YtODCZw" parameterName="UID"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_E9VHgHOnEey01Z3YtODCZw" entityName="FileServiceInterface">
+    <signatures__OperationInterface id="_GVks0HOnEey01Z3YtODCZw" entityName="getFiles" returnType__OperationSignature="_UXZ6wHOlEey01Z3YtODCZw">
+      <parameters__OperationSignature dataType__Parameter="_7XIUMHOkEey01Z3YtODCZw" parameterName="request"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_ZpzWkHOnEey01Z3YtODCZw" entityName="AdminInterface">
+    <signatures__OperationInterface id="_bWJjoHOnEey01Z3YtODCZw" entityName="loginAndAdmin" returnType__OperationSignature="_UXZ6wHOlEey01Z3YtODCZw">
+      <parameters__OperationSignature dataType__Parameter="_7XIUMHOkEey01Z3YtODCZw" parameterName="request"/>
+      <parameters__OperationSignature dataType__Parameter="__IxZ0HOkEey01Z3YtODCZw" parameterName="credentials"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_7XIUMHOkEey01Z3YtODCZw" entityName="Request"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="__IxZ0HOkEey01Z3YtODCZw" entityName="Credentials"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_UXZ6wHOlEey01Z3YtODCZw" entityName="Response"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_oqojYHOlEey01Z3YtODCZw" entityName="Config"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_-YAOwHOlEey01Z3YtODCZw" entityName="UserUID"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_dEWAQHOmEey01Z3YtODCZw" entityName="PublicKey"/>
+</repository:Repository>
