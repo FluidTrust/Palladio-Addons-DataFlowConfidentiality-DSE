@@ -1,9 +1,0 @@
--------------- GENERAL ---------------
-Constraint count: 1
------------- CONSTRAINT 1 ------------
-Constraint name: "noDownflow"
-Violations found: 0
---------- CONSTRAINT DETAILS ---------
-Data Characteristics: "DataLevel" set to "High"
-Condition: NEVER FLOWS
-Destination Characteristics: "ResourceLevel" set to "Low"
