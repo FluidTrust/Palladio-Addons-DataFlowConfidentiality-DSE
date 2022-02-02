@@ -2,23 +2,8 @@
 Constraint count: 1
 ------------ CONSTRAINT 1 ------------
 Constraint name: "noDownflow"
-Violations found: 8
+Violations found: 0
 --------- CONSTRAINT DETAILS ---------
+Data Characteristics: "DataLevel" set to "High"
 Condition: NEVER FLOWS
 Destination Characteristics: "ResourceLevel" set to "Low"
-------- CONSTRAINT VIOLATIONS --------
-1. "data (dycgeaqxaqgrb46al5su2qs04)" is not allowed to be input in "SEFF Entry Assembly_BusinessTripMgmt.plan (_gl2LQHoAEeyIg6qH2FGjuA)".
-
-2. "isBank (3hzm50fbelqd7n9cmymfi2drq)" is not allowed to be input in "SEFF Entry Assembly_BusinessTripMgmt.plan (_gl2LQHoAEeyIg6qH2FGjuA)".
-
-3. "isBook (7yxhihsjsc45uae5rpdu4xsr6)" is not allowed to be input in "SEFF Entry Assembly_BusinessTripMgmt.plan (_gl2LQHoAEeyIg6qH2FGjuA)".
-
-4. "data (aur8yiyhdx8neuxgkjem9ko6g)" is not allowed to be input in "SEFF Entry Assembly_BookingSystem.book (_gl3ZZnoAEeyIg6qH2FGjuA)".
-
-5. "isBank (3o8odrt4tvrdfglyrmpbll2zx)" is not allowed to be input in "SEFF Entry Assembly_BookingSystem.book (_gl3ZZnoAEeyIg6qH2FGjuA)".
-
-6. "RETURN (7o6ngdzi1e56k7h6bkout2x7f)" is not allowed to be input in "SEFF Exit Assembly_BookingSystem.book (_gl4AfnoAEeyIg6qH2FGjuA)".
-
-7. "data (9nfv05kdur5a6od6128qfipw3)" is not allowed to be input in "Action not altering the level (low is low) (_gl4Ah3oAEeyIg6qH2FGjuA)".
-
-8. "isBank (8kacqap9xeqln99eqq5q5rrc5)" is not allowed to be input in "SEFF Entry Assembly_PaymentSystem.pay (_gl4niXoAEeyIg6qH2FGjuA)".

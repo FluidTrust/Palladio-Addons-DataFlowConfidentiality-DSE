@@ -58,7 +58,6 @@ public class DSLEvaluator extends ConfidentialityEvaluator {
             .addUsageModelsByURI(uriusage)
             .addDCPDSL(tmpURI)
             .setSerializeResultHandler(results::add)
-            .setSerializeFlowTree(true)
             .build();
         final var workflow = TransformPCMDFDWithConstraintsToPrologWorkflowFactory.createWorkflow(transformJob);
         workflow.run();

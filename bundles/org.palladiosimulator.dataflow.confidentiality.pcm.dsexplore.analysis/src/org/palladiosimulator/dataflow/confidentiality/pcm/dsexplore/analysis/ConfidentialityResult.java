@@ -15,7 +15,7 @@ public class ConfidentialityResult implements IAnalysisResult {
     @Override
     public double getValueFor(final Criterion criterion) {
         if (this.solution) {
-            return Double.NEGATIVE_INFINITY;
+            return -1.0;
         }
         return 1.0;
     }

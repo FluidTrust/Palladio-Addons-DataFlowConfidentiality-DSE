@@ -6,7 +6,7 @@ type GrantedRoles:GrantedRoles
 constraint AtLeastOneMatchingRoleRequired {
 	data.attribute.GrantedRoles.$dataRoles{}
 		NEVER FLOWS
-	component.property.AssignedRoles.$subjectRoles{}
+	element.property.AssignedRoles.$subjectRoles{}
 		WHERE
 	isEmpty(intersection(subjectRoles,dataRoles))
 }

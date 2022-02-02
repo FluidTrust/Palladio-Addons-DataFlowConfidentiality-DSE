@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QMLDeclarations:QMLDeclarations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:QMLContract="http:///QMLContract.ecore" xmlns:QMLDeclarations="http:///QMLDeclarations.ecore" xmlns:QMLProfile="http:///QMLProfile.ecore" id="_LOJwIIGvEey75I_U79Niiw">
+  <qmlDeclarations xsi:type="QMLProfile:SimpleQMLProfile" id="_LqgU8IGvEey75I_U79Niiw" entityName="Bank">
+    <usageModel href="newUsageModel.usagemodel#/0"/>
+    <requirements xsi:type="QMLProfile:UsageScenarioRequirement" id="_Q6fn4IGvEey75I_U79Niiw" requireContract="_Tv4gooGvEey75I_U79Niiw">
+      <usageScenario href="newUsageModel.usagemodel#_poSoUD6wEeuVUal8mM_jUA"/>
+    </requirements>
+  </qmlDeclarations>
+  <qmlDeclarations xsi:type="QMLContract:SimpleQMLContract" id="_Tv4gooGvEey75I_U79Niiw" entityName="Confidentiality">
+    <criteria xsi:type="QMLContract:Objective" id="_Vsun0IGvEey75I_U79Niiw">
+      <dimension href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype#_lzV00Fv5EeyWNI3A5PdLkQ"/>
+      <aspects xsi:type="QMLContract:Value" id="_Wn_9RIGvEey75I_U79Niiw">
+        <aspectRequirement xsi:type="QMLContract:Goal" id="_YhYgwYGvEey75I_U79Niiw">
+          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_ZfsjIIGvEey75I_U79Niiw" value="1.0"/>
+        </aspectRequirement>
+      </aspects>
+    </criteria>
+    <contractType href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/ConfidentialityContract.qmlcontracttype#_BBLcEHe6EeyqWdwf1u0RUg"/>
+  </qmlDeclarations>
+</QMLDeclarations:QMLDeclarations>

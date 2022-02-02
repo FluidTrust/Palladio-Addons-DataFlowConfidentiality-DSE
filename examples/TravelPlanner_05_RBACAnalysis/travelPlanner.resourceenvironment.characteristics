@@ -8,8 +8,8 @@
     <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@1"/>
     <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@0"/>
   </characteristics>
-  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_1ly9EIGtEey75I_U79Niiw">
+  <characteristics xsi:type="characteristics:EnumCharacteristic" id="_B8u6EINaEeykHcwCE7uoBg">
     <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@1"/>
-    <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@1"/>
+    <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@0"/>
   </characteristics>
 </characteristics:Characteristics>

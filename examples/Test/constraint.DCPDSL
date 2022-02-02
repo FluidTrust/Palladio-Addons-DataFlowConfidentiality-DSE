@@ -4,5 +4,5 @@ type DataLevel : DataLevel
 type ResourceLevel: RessourceLevel
 
 constraint noDownflow {
-	data.attribute.DataLevel.High NEVER FLOWS component.property.ResourceLevel.Low
+	data.attribute.DataLevel.High NEVER FLOWS element.property.ResourceLevel.Low
 }
