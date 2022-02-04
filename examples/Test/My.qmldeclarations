@@ -16,6 +16,7 @@
       </aspects>
     </criteria>
     <criteria xsi:type="QMLContract:Constraint" id="_GGHTcYWNEeyEfPY5WOXurg">
+      <dimension href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype#_lzV00Fv5EeyWNI3A5PdLkQ"/>
       <aspects xsi:type="QMLContract:Value" id="_Gnp6RIWNEeyEfPY5WOXurg">
         <aspectRequirement xsi:type="QMLContract:Restriction" id="_Hw9EoIWNEeyEfPY5WOXurg">
           <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_IRsaMIWNEeyEfPY5WOXurg"/>
