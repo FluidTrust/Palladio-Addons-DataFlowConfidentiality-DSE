@@ -4,30 +4,41 @@ type DataLevel : DataLevel
 type UserLevel : UserLevel
 type OriginIdentity : Identity
 
-const ADMINS{} = UserLevel.[Admin]
-const NON_OUTSIDER{} = UserLevel.[Admin, Unauthenticated, User]
+//const ADMINS{} = UserLevel.[Admin]
+//const NON_OUTSIDER{} = UserLevel.[Admin, Unauthenticated, User]
+
+
 
 // No data is allowed to flow from an admin node to any type of person who has not the UserLevel "Admin"
-constraint noFlowFromAdminNodeToNonAdmins {
-	data.any NEVER FLOWS element.property.UserLevel.$UL1{} FROM element.property.OriginIdentity.AdminNode WHERE !subset(UL1, ADMINS)
+constraint noFlowFromAdminNodeToNonUsers {
+	data.any NEVER FLOWS element.property.UserLevel.Unauthenticated FROM element.property.OriginIdentity.AdminNode
+}
+constraint noFlowFromAdminNodeToUsers {
+	data.any NEVER FLOWS element.property.UserLevel.User FROM element.property.OriginIdentity.AdminNode
 }
 
-// No data is allowed to flow to a person outside of the IP range at any time
-constraint noFlowToOutsiders {
-	data.any NEVER FLOWS element.property.UserLevel.$UL2{} WHERE !subset(UL2, NON_OUTSIDER)
-}
+
+
 
 // Information is not allowed to flow from internal nodes to unauthenticated users
 constraint noFlowToInternalNodeFromNonAuthenticatedUsers {
 	data.attribute.UserLevel.Unauthenticated NEVER FLOWS element.property.OriginIdentity.InternalNode
 }
 
+
+// No data is allowed to flow to a person outside of the IP range at any time
+//constraint noFlowToOutsiders {
+//	data.any NEVER FLOWS element.property.UserLevel.$UL2{} WHERE !subset(UL2, NON_OUTSIDER)
+//}
+
+
+
 // Restricted information is only used internally and may only flow to admins for debugging purposes
-constraint noRestrictedDataFlowToNonAdmins {
-	data.attribute.DataLevel.Restricted NEVER FLOWS element.property.UserLevel.$UL3{} WHERE !subset(UL3, ADMINS)
-}
+//constraint noRestrictedDataFlowToNonAdmins {
+//	data.attribute.DataLevel.Restricted NEVER FLOWS element.property.UserLevel.$UL3{} WHERE !subset(UL3, ADMINS)
+//}
 
 // Internal information is only allowed to flow to admins for debugging purposes without explicit clearing
-constraint noInternalDataFlowToNonAdmins {
-	data.attribute.DataLevel.Internal NEVER FLOWS element.property.UserLevel.$UL4{} WHERE !subset(UL4, ADMINS)
-}
+//constraint noInternalDataFlowToNonAdmins {
+//	data.attribute.DataLevel.Internal NEVER FLOWS element.property.UserLevel.$UL4{} WHERE !subset(UL4, ADMINS)
+//}

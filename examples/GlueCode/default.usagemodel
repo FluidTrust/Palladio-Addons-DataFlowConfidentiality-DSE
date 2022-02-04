@@ -21,12 +21,11 @@
           <inputParameterUsages_EntryLevelSystemCall>
             <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
               <specification_VariableCharacterisation specification="false"/>
-              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_QohxEHOsEey01Z3YtODCZw">
+              <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_8y8r4IXBEeyOOa6nU96_hA">
                 <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
+                <literal href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicEnumerations@0.literals@1"/>
               </lhs>
-              <rhs xsi:type="expressions:ContainerCharacteristicReference" id="_QohxEXOsEey01Z3YtODCZw">
-                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="dictionary.pddc#_J6VFoHOqEey01Z3YtODCZw-characteristicTypes@0"/>
-              </rhs>
+              <rhs xsi:type="expressions:True" id="_8y8r4YXBEeyOOa6nU96_hA"/>
             </variableCharacterisation_VariableUsage>
             <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="request"/>
           </inputParameterUsages_EntryLevelSystemCall>
