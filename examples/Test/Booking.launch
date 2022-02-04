@@ -12,7 +12,7 @@
     <stringAttribute key="Composed Criteria Expression" value=""/>
     <stringAttribute key="Configured Objectives with averages" value=""/>
     <stringAttribute key="Configured objectives with values" value=""/>
-    <booleanAttribute key="Consider QML bounds" value="false"/>
+    <booleanAttribute key="Consider QML bounds" value="true"/>
     <stringAttribute key="Decrease processing rate factor" value="0.25"/>
     <stringAttribute key="Evaluation Mode" value="EXACT_NUMBER"/>
     <intAttribute key="Exact number of survivors" value="1"/>
@@ -53,7 +53,7 @@
     <booleanAttribute key="Use processing rate heuristic" value="false"/>
     <booleanAttribute key="Use reallocation heuristic" value="false"/>
     <booleanAttribute key="Use server consolidation heuristic" value="false"/>
-    <booleanAttribute key="Use server expansion heuristic" value="false"/>
+    <booleanAttribute key="Use server expansion heuristic" value="true"/>
     <booleanAttribute key="Use starting population heuristic" value="false"/>
     <stringAttribute key="Weight of processing rate heuristic" value="0.1"/>
     <stringAttribute key="Weight of reallocation heuristic" value="1.0"/>
@@ -62,7 +62,7 @@
     <stringAttribute key="accuracyQualityAnnotationFile" value=""/>
     <stringAttribute key="allCandidates" value=""/>
     <stringAttribute key="allocationFile" value="platform:/resource/Test/default.allocation"/>
-    <stringAttribute key="analysisMethodde.uka.ipd.sdq.dsexplore.cost" value="none"/>
+    <stringAttribute key="analysisMethodde.uka.ipd.sdq.dsexplore.cost" value="Cost Analysis"/>
     <stringAttribute key="analysisMethodde.uka.ipd.sdq.dsexplore.featurecompletions" value="none"/>
     <stringAttribute key="analysisMethodde.uka.ipd.sdq.dsexplore.nqr" value="none"/>
     <stringAttribute key="analysisMethodde.uka.ipd.sdq.dsexplore.performance" value="none"/>
@@ -86,7 +86,7 @@
     <stringAttribute key="confidenceModelElementURI" value=""/>
     <booleanAttribute key="confidenceUseAutomaticBatches" value="true"/>
     <stringAttribute key="convValue" value="0.001"/>
-    <stringAttribute key="costFile" value=""/>
+    <stringAttribute key="costFile" value="platform:/resource/Test/default.cost"/>
     <stringAttribute key="crossover rate" value="0.5"/>
     <intAttribute key="de.uka.ipd.sdq.workflowengine.debuglevel" value="2"/>
     <stringAttribute key="designDecisionFile" value="platform:/resource/Test/simpleexample.designdecision"/>

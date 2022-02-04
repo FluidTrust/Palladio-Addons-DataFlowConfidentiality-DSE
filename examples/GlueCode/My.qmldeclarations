@@ -5,7 +5,7 @@
       <dimension href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype#_lzV00Fv5EeyWNI3A5PdLkQ"/>
       <aspects xsi:type="QMLContract:Value" id="_UlzNFIQBEey3Uv8avCjmrw">
         <aspectRequirement xsi:type="QMLContract:Goal" id="_VP-ygYQBEey3Uv8avCjmrw">
-          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_V-GcwIQBEey3Uv8avCjmrw" value="1.0"/>
+          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_V-GcwIQBEey3Uv8avCjmrw" value="-1.0"/>
         </aspectRequirement>
       </aspects>
     </criteria>

@@ -11,7 +11,14 @@
       <dimension href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype#_lzV00Fv5EeyWNI3A5PdLkQ"/>
       <aspects xsi:type="QMLContract:Value" id="_RVJAVHeaEeyS7cr3dXzr1w">
         <aspectRequirement xsi:type="QMLContract:Goal" id="_SUeWYXeaEeyS7cr3dXzr1w">
-          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_TkbiYHeaEeyS7cr3dXzr1w" value="1.0"/>
+          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_TkbiYHeaEeyS7cr3dXzr1w" value="-1.0"/>
+        </aspectRequirement>
+      </aspects>
+    </criteria>
+    <criteria xsi:type="QMLContract:Constraint" id="_GGHTcYWNEeyEfPY5WOXurg">
+      <aspects xsi:type="QMLContract:Value" id="_Gnp6RIWNEeyEfPY5WOXurg">
+        <aspectRequirement xsi:type="QMLContract:Restriction" id="_Hw9EoIWNEeyEfPY5WOXurg">
+          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_IRsaMIWNEeyEfPY5WOXurg"/>
         </aspectRequirement>
       </aspects>
     </criteria>

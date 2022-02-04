@@ -18,13 +18,6 @@
     <semanticResources>My.qmldeclarations</semanticResources>
     <semanticResources>platform:/plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/ConfidentialityContract.qmlcontracttype</semanticResources>
     <semanticResources>platform:/plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype</semanticResources>
-    <semanticResources>tmpTest/default.system</semanticResources>
-    <semanticResources>tmpTest/default.repository</semanticResources>
-    <semanticResources>tmpTest/default.usagemodel</semanticResources>
-    <semanticResources>tmpTest/default.usagemodel.characteristics</semanticResources>
-    <semanticResources>tmpTest/My.resourceenvironment</semanticResources>
-    <semanticResources>tmpTest/My.resourceenvironment.characteristics</semanticResources>
-    <semanticResources>tmpTest/default.allocation</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_FCoWwCF-EeqYabGLKRlfzA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.allocation/description/allocation.odesign#//@ownedViewpoints[name='Allocation']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_FDq4kyF-EeqYabGLKRlfzA" name="Allocation Diagram" repPath="#_FCoWwSF-EeqYabGLKRlfzA" changeId="b2ee8b96-0615-4a6f-862d-a092cc81e958">
